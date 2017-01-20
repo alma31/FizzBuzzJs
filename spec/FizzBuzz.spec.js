@@ -13,4 +13,10 @@ describe("FizzBuzzOf execution", function () {
 	it("should return Fizz with parameter 3", function(){
 		expect(FizzBuzzOf(3)).toBe("Fizz");
 	})
+	it("should return Bizz with parameter 5", function(){
+		expect(FizzBuzzOf(5)).toBe("Buzz");
+	})
+	it("should return FuzzBizz with parameter 3 and 5", function(){
+		expect(FizzBuzzOf(3)+FizzBuzzOf(5)).toBe("FizzBuzz");
+	})
 });
